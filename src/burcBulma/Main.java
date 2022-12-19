@@ -11,11 +11,11 @@ public class Main {
 
 	        Scanner i = new Scanner(System.in); 
 
-	        System.out.print("Doğduğunuz ayı giriniz : ");
+	        System.out.print("please enter your birth month : ");
 
 	        month = i.nextInt();
 
-	        System.out.print("Doğduğunuz günü giriniz : ");
+	        System.out.print("please enter your birth day : ");
 
 	        day = i.nextInt();
 
@@ -25,9 +25,9 @@ public class Main {
 	        if(month == 1){
 	            if(day >=1 && day <= 31){
 	                if(day <= 21){
-	                    burc = "Oğlak";
+	                    burc = "Capricorn";
 	                } else{
-	                    burc = "Kova";
+	                    burc = "Aquarius";
 	                }
 	            } else{
 	                isError = true;
@@ -35,9 +35,9 @@ public class Main {
 	        } else if(month == 2){
 	            if(day >= 1 && day <= 28){
 	                if(day <= 19){
-	                    burc = "Kova";
+	                    burc = "Aquarius";
 	                } else{
-	                    burc = "Balık";
+	                    burc = "Pisces";
 	                }
 	            } else{
 	                isError = true;
@@ -45,9 +45,9 @@ public class Main {
 	        } else if (month == 3){
 	            if(day >= 1 && day <= 31){
 	                if(day <= 20){
-	                    burc = "Balık";
+	                    burc = "Pisces";
 	                } else{
-	                    burc = "Koç";
+	                    burc = "Aries";
 	                }
 	            } else {
 	                isError = true;
@@ -55,9 +55,9 @@ public class Main {
 	        } else if (month == 4){
 	            if(day >= 1 && day <= 30 ){
 	                if(day <= 20){
-	                    burc = "Koç";
+	                    burc = "Aries";
 	                } else{
-	                    burc = "Boğa";
+	                    burc = "Taurus";
 	                }
 	            } else {
 	                isError = true;
@@ -65,9 +65,9 @@ public class Main {
 	        } else if(month == 5){
 	            if(day >= 1 && day <= 31){
 	                if(day <= 20){
-	                    burc = "Boğa";
+	                    burc = "Taurus";
 	                } else {
-	                    burc = "İkizler";
+	                    burc = "Gemini";
 	                }
 	            } else{
 	                isError = true;
@@ -75,9 +75,9 @@ public class Main {
 	        } else if(month == 6){
 	            if(day >= 1 && day <= 30){
 	                if(day <= 21){
-	                    burc = "İkizler";
+	                    burc = "Gemini";
 	                } else{
-	                    burc = "Yengeç";
+	                    burc = "Cancer";
 	                }
 	            }else{
 	                isError = true;
@@ -85,9 +85,9 @@ public class Main {
 	        } else if(month == 7){
 	            if(day >= 1 && day <= 31){
 	                if(day <= 22){
-	                    burc = "Yengeç";
+	                    burc = "Cancer";
 	                }else{
-	                    burc = "Aslan";
+	                    burc = "Leo";
 	                }
 	            } else{
 	                isError = true;
@@ -95,9 +95,9 @@ public class Main {
 	        } else if(month == 8){
 	            if(day >= 1 && day <= 31){
 	                if(day <= 23){
-	                    burc = "Aslan";
+	                    burc = "Leo";
 	                } else {
-	                    burc = "Başak";
+	                    burc = "Virgo";
 	                }
 	            } else{
 	                isError = true;
@@ -105,9 +105,9 @@ public class Main {
 	        } else if(month == 9){
 	            if(day >= 1 && day <= 30 ){
 	                if(day <= 23){
-	                    burc = "Başak";
+	                    burc = "Virgo";
 	                } else{
-	                    burc = "Terazi";
+	                    burc = "Libra";
 	                }
 	            } else{
 	                isError = true;
@@ -115,9 +115,9 @@ public class Main {
 	        } else if(month == 10){
 	            if(day >= 1 && day <= 31){
 	                if(day <= 23){
-	                    burc = "Terazi";
+	                    burc = "Libra";
 	                } else{
-	                    burc = "Akrep";
+	                    burc = "Scorpio";
 	                }
 	            } else {
 	                isError = true;
@@ -125,9 +125,9 @@ public class Main {
 	        } else if(month == 11){
 	            if(day >= 1 && day <= 30){
 	                if(day <= 22){
-	                    burc = "Akrep";
+	                    burc = "Scorpio";
 	                } else{
-	                    burc = "Yay";
+	                    burc = "Sagittarius";
 	                }    
 	            } else{
 	                isError = true;
@@ -135,9 +135,9 @@ public class Main {
 	        } else if(month == 12){
 	            if(day >= 1 && day <= 31){
 	                if(day <= 22){
-	                    burc = "Yay";   
+	                    burc = "Sagittarius";   
 	                } else{
-	                    burc = "Oğlak";
+	                    burc = "Capricorn";
 	                }
 	            } else{
 	                isError = true;
@@ -150,9 +150,9 @@ public class Main {
 	            
 	         
 	        if(isError){
-	            System.out.println("Hatalı giriş yaptınız");
+	            System.out.println("you entered informations wrong. please check your informations.");
 	        } else{
-	            System.out.println("Burcunuz : "+ burc);
+	            System.out.println("your zodiac : "+ burc);
 	        }
 		
 		
